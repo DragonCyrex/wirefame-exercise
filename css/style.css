@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr 50px;
+  width: 100%;
+  gap: 30px;
+}
+
+header {
+  background-color: #a9a9a9;
+  color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+  padding: 20px;
+}
+
+main {
+  width: 960px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+main section:nth-child(2) {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 30px;
+  margin-bottom: 30px;
+}
